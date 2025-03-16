@@ -1,0 +1,55 @@
+/* Hero section styling */
+.hero {
+  text-align: center;
+  padding: 4rem 2rem;
+  background-color: #e9ecef;
+  transition: padding 0.3s;
+}
+
+.hero h1 {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+  color: #343a40; /* Dark Gray */
+  transition: font-size 0.3s;
+}
+
+.hero p {
+  font-size: 1.25rem;
+  margin-bottom: 2rem;
+  color: #6c757d;
+  transition: font-size 0.3s;
+}
+
+.hero button {
+  padding: 0.75rem 1.5rem;
+  font-size: 1rem;
+  color: #fff;
+  background-color: #007BFF; /* Light Blue */
+  border: none;
+  border-radius: 0.25rem;
+  cursor: pointer;
+  transition: background-color 0.3s, padding 0.3s;
+}
+
+.hero button:hover {
+  background-color: #0056b3;
+}
+
+/* Responsive styling for mobile devices */
+@media (max-width: 768px) {
+  .hero {
+    padding: 2rem 1rem;
+  }
+
+  .hero h1 {
+    font-size: 2rem;
+  }
+
+  .hero p {
+    font-size: 1rem;
+  }
+
+  .hero button {
+    padding: 0.5rem 1rem;
+  }
+}

@@ -1,0 +1,143 @@
+.events-page {
+  padding: 2rem;
+  background-color: #f8f9fa;
+  transition: padding 0.3s;
+}
+
+.events-page h2 {
+  text-align: center;
+  color: #343a40; /* Dark Gray */
+  transition: font-size 0.3s;
+}
+
+.events-page select {
+  display: block;
+  margin: 1rem auto;
+  padding: 0.5rem;
+  font-size: 1rem;
+  transition: padding 0.3s, font-size 0.3s;
+}
+
+.events-list {
+  list-style: none;
+  padding: 0;
+}
+
+.event-item {
+  background-color: #fff;
+  padding: 1rem;
+  margin: 1rem 0;
+  border: 1px solid #dee2e6;
+  border-radius: 0.25rem;
+  transition: padding 0.3s;
+}
+
+.event-item h3 {
+  margin-top: 0;
+  color: #343a40; /* Dark Gray */
+  transition: font-size 0.3s;
+}
+
+.event-item button {
+  padding: 0.5rem 1rem;
+  font-size: 1rem;
+  color: #fff;
+  background-color: #dc3545;
+  border: none;
+  border-radius: 0.25rem;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.event-item button:hover {
+  background-color: #c82333;
+}
+
+.add-event-header {
+  text-align: center;
+  color: #343a40; /* Dark Gray */
+  transition: font-size 0.3s;
+}
+
+.add-event-form {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  max-width: 400px;
+  margin: 2rem auto;
+  transition: max-width 0.3s;
+}
+
+.add-event-form input {
+  padding: 0.5rem;
+  font-size: 1rem;
+  border: 1px solid #ced4da;
+  border-radius: 0.25rem;
+  transition: padding 0.3s, font-size 0.3s;
+}
+
+.add-event-form label {
+  margin-top: 0.5rem;
+  font-size: 1rem;
+  color: #343a40; /* Dark Gray */
+}
+
+.add-event-form button {
+  padding: 0.75rem;
+  font-size: 1rem;
+  color: #fff;
+  background-color: #007BFF; /* Light Blue */
+  border: none;
+  border-radius: 0.25rem;
+  cursor: pointer;
+  transition: background-color 0.3s, padding 0.3s;
+}
+
+.add-event-form button:hover {
+  background-color: #0056b3;
+}
+
+.error {
+  color: red;
+  font-size: 0.875rem;
+  margin-top: -0.5rem;
+  margin-bottom: 0.5rem;
+}
+
+@media (max-width: 768px) {
+  .events-page {
+    padding: 1rem;
+  }
+
+  .add-event-form {
+    width: 100%;
+    padding: 1rem;
+  }
+
+  .add-event-form input {
+    width: 100%; /* Ensure input fields take full width */
+    box-sizing: border-box; /* Include padding and border in the element's total width and height */
+  }
+
+  .event-item {
+    padding: 0.5rem;
+  }
+
+  .event-item h3 {
+    font-size: 1.25rem;
+  }
+
+  .add-event-header {
+    font-size: 1.5rem;
+  }
+
+  .add-event-form input {
+    padding: 0.5rem;
+    font-size: 1rem;
+  }
+
+  .add-event-form button {
+    padding: 0.5rem;
+    font-size: 1rem;
+  }
+}

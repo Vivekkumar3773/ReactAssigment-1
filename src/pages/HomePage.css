@@ -1,0 +1,35 @@
+/* Home content styling */
+.home-content {
+  padding: 2rem;
+  background-color: #f8f9fa;
+  text-align: center;
+  transition: padding 0.3s;
+}
+
+.home-content h2 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  color: #343a40; /* Dark Gray */
+  transition: font-size 0.3s;
+}
+
+.home-content p {
+  font-size: 1.25rem;
+  color: #6c757d;
+  transition: font-size 0.3s;
+}
+
+/* Responsive styling for mobile devices */
+@media (max-width: 768px) {
+  .home-content {
+    padding: 1rem;
+  }
+
+  .home-content h2 {
+    font-size: 1.5rem;
+  }
+
+  .home-content p {
+    font-size: 1rem;
+  }
+}
